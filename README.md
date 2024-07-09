@@ -10,10 +10,6 @@
 
 ###
 
-<img align="right" height="" src=""  />
-
-###
-
 <div align="center">
   <img src="https://skillicons.dev/icons?i=rust" height="30" alt="rust logo"  />
   <img width="12" />
