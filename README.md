@@ -39,7 +39,11 @@
       <img width="12" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="C++"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="BASh"  />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=bash" height="30" alt="BASh"/>
+        <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="BASh" />
+        <img alt="BASh" >
+      </picture>
       <img width="12" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" height="30" alt="Dart"  />
       <img width="12" />
