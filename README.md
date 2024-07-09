@@ -58,7 +58,11 @@
     <h3 align="left">You can find me on <a href=https://linkedin.com/in/john-jack-lee>LinkedIn</a> and <a href="https://discordapp.com/users/557397965891829770">Discord</a></h3>
     </html>
     <br clear="both">
-    <img src="https://github.com/kcajeel/kcajeel/blob/output/snake.svg" alt="Snake animation" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="../output/snake-dark.svg" alt="Snake animation"/>
+      <source media="(prefers-color-scheme: light)" srcset="../output/snake.svg" alt="Snake animation" />
+      <img alt="github-snake" >
+    </picture>
     <p>snake :D</p>
   </body>
 </html>
