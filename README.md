@@ -17,12 +17,12 @@
       <li>Rust is my favorite language to work with</li>
       <li>I'm writing this from a ThinkPad T450s running Gentoo that I got for free</li>
     </ul>
-    <div align="justify" class="stats">
+    <div align="justify" >
       <img src="https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="150" alt="stats graph"  />
       <img src="https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
     </div>
     <h3 align="left">I don't have a project for every language I know:</h3>
-    <div align="left" class="languages>
+    <div align="left" >
       <img src="https://skillicons.dev/icons?i=rust" height="30" alt="Rust"  />
       <img width="12" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="Java"  />
