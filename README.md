@@ -18,8 +18,16 @@
       <li>I'm writing this from a ThinkPad T450s running Gentoo that I got for free</li>
     </ul>
     <div align="justify" >
-      <img src="https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="150" alt="stats graph"  />
-      <img src="https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="150" alt="stats graph">
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_light&locale=en&hide_border=true" height="150" alt="stats graph">
+        <img alt="stats graph">
+      </picture>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true" height="150" alt="languages graph">
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_light&hide_border=true" height="150" alt="languages graph">
+        <img alt="languages graph">
+      </picture>
     </div>
     <h3 align="left">I don't have a project for every language I know:</h3>
     <div align="left" >
