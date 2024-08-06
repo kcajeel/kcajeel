@@ -11,11 +11,11 @@
     <h2 align="left">About Me</h2>
     <ul>
       <li>I'm a senior at Embry-Ridle Aeronautical University majoring in Computer Science with a concentration in Cybersecurity Engineering</li>
-      <li>I'm interested in cybersecurity, cryptography, software development, linux/FOSS stuff, and learning new thnigs</li>
+      <li>Interested in cybersecurity, cryptography, software development, linux/FOSS stuff, and learning new thingss</li>
       <li>None of my code is written by AI</li>
-      <li>I enjoy working in teams using a design-first approach to development</li>
+      <li>I enjoy working in teams using a design-first approach with TDD</li>
       <li>Rust is my favorite language to work with</li>
-      <li>I'm writing this from a ThinkPad T450s running Gentoo that I got for free</li>
+      <li>I use Gentoo BTW</li>
     </ul>
     <div align="justify" >
       <picture>
