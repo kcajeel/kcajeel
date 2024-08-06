@@ -11,7 +11,7 @@
     <h2 align="left">About Me</h2>
     <ul>
       <li>I'm a senior at Embry-Ridle Aeronautical University majoring in Computer Science with a concentration in Cybersecurity Engineering</li>
-      <li>Interested in cybersecurity, cryptography, software development, linux/FOSS stuff, and learning new thingss</li>
+      <li>Interested in cybersecurity, cryptography, software development, linux/FOSS stuff, and learning</li>
       <li>None of my code is written by AI</li>
       <li>I enjoy working in teams using a design-first approach with TDD</li>
       <li>Rust is my favorite language to work with</li>
