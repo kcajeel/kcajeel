@@ -14,9 +14,6 @@ jobs:
   generate_stats: 
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    outputs: 
-      stats_light: ${{ steps.create_output.stats_light }}
-      stats_dark: ${{ steps.create_output.stats_dark }}
     steps: 
       - name: Fetch SVG's
         env: 
@@ -33,20 +30,15 @@ jobs:
           test -f output/stats_dark.svg
           test -f output/stats_light.svg
 
-      - name: Send SVG's to Output
-        id: create_output
-        run: |
-          stats_light=$(< output/stats_light.svg)
-          stats_dark=$(< output/stats_dark.svg)
-          echo "stats_light=$stats_light" >> $GITHUB_OUTPUT
-          echo "stats_dark=$stats_dark" >> $GITHUB_OUTPUT
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with: 
+            name: stats
+            path: output
 
   generate_languages: 
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    outputs: 
-      languages_light: ${{ steps.create_output.languages_light }}
-      languages_dark: ${{ steps.create_output.languages_dark }}
     steps: 
       - name: Fetch SVG's
         env: 
@@ -63,13 +55,11 @@ jobs:
           test -f output/languages_dark.svg
           test -f output/languages_light.svg
 
-      - name: Send SVG's to Output
-        id: create_output
-        run: |
-          languages_light=$(< output/languages_light.svg)
-          languages_dark=$(< output/languages_dark.svg)
-          echo "languages_light=$languages_light" >> $GITHUB_OUTPUT
-          echo "languages_dark=$languages_dark" >> $GITHUB_OUTPUT
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+            name: languages
+            path: output
 
   publish-branch:
     needs: [generate_stats, generate_languages]
@@ -77,23 +67,18 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps: 
-      - name: collect outputs
-        env: 
-          stats_dark: ${{ needs.generate_stats.outputs.stats_dark }}
-          stats_light: ${{ needs.generate_stats.outputs.stats_light }}
-          languages_dark: ${{ needs.generate_languages.outputs.languages_dark }}
-          languages_light: ${{ needs.generate_languages.outputs.languages_light }}
-        run: |
-          mkdir output
-          echo "$STATS_DARK" > output/stats_dark.svg
-          echo "$STATS_LIGHT" > output/stats_light.svg
-          echo "$LANGUAGES_DARK" > output/languages_dark.svg
-          echo "$LANGUAGES_LIGHT" > output/languages_light.svg
+        - name: Create Output Directory
+          run: mkdir output
+
+        - name: Collect Artifacts
+          uses: actions/download-artifact@v4
+          with: 
+                path: output
       
-      - name: push outputs to github
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with: 
-          target_branch: output
-          build_dir: output
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        - name: Push Output to GitHub
+          uses: crazy-max/ghaction-github-pages@v3.1.0
+          with: 
+            target_branch: output
+            build_dir: output
+          env: 
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
