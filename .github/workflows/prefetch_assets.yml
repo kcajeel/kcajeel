@@ -77,8 +77,8 @@ jobs:
       - name: make sure the files were generated
         run: |
           ls dist
-          test -f dist/snake.svg
-          test -f dist/snake-dark.svg
+          test -f output/snake.svg
+          test -f output/snake-dark.svg
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
