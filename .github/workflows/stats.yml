@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: collect outputs
-        - env: 
+        env: 
           stats_dark: ${{ needs.generate_stats.outputs.stats_dark }}
           stats_light: ${{ needs.generate_stats.outputs.stats_light }}
           languages_dark: ${{ needs.generate_languages.outputs.languages_dark }}
