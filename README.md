@@ -19,13 +19,13 @@
     </ul>
     <div align="justify" >
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="150" alt="stats graph">
-        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_light&locale=en&hide_border=true" height="150" alt="stats graph">
+        <source media="(prefers-color-scheme: dark)" srcset="../output/stats/stats_dark.svg" height="150" alt="stats graph">
+        <source media="(prefers-color-scheme: light)" srcset="../output/stats/stats_light" height="150" alt="stats graph">
         <img alt="stats graph">
       </picture>
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true" height="150" alt="languages graph">
-        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_light&hide_border=true" height="150" alt="languages graph">
+        <source media="(prefers-color-scheme: dark)" srcset="../output/languages/languages_dark.svg" height="150" alt="languages graph">
+        <source media="(prefers-color-scheme: light)" srcset="../output/languages/languages_light.svg" height="150" alt="languages graph">
         <img alt="languages graph">
       </picture>
     </div>
@@ -63,8 +63,8 @@
     </html>
     <br clear="both">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="../output/snake-dark.svg" alt="Snake animation"/>
-      <source media="(prefers-color-scheme: light)" srcset="../output/snake.svg" alt="Snake animation" />
+      <source media="(prefers-color-scheme: dark)" srcset="../output/snake/snake-dark.svg" alt="Snake animation"/>
+      <source media="(prefers-color-scheme: light)" srcset="../output/snake/snake-light.svg" alt="Snake animation" />
       <img alt="github-snake" >
     </picture>
     <p>snake :D</p>
