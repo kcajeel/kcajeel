@@ -76,7 +76,7 @@ jobs:
             
       - name: make sure the files were generated
         run: |
-          ls dist
+          ls output
           test -f output/snake.svg
           test -f output/snake-dark.svg
 
