@@ -59,9 +59,9 @@
       <img width="12" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="Python"  />
     </div>
-    <h3 align="left">You can find me on <a href=https://linkedin.com/in/john-jack-lee>LinkedIn</a> and <a href="https://discordapp.com/users/557397965891829770">Discord</a></h3>
+    <h3 align="left">You can also find me on <a href=https://linkedin.com/in/john-jack-lee>LinkedIn</a></h3>
     </html>
-    <br clear="both">
+<!--     <br clear="both"> -->
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="../output/snake/snake-dark.svg" alt="Snake animation"/>
       <source media="(prefers-color-scheme: light)" srcset="../output/snake/snake-light.svg" alt="Snake animation" />
