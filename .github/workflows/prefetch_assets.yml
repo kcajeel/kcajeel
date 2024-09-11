@@ -1,4 +1,4 @@
-name: Preload profile stats
+name: Fetch and publish profile stats graphs and snake animation
 
 on: 
   schedule: 
