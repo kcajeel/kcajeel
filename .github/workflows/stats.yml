@@ -72,10 +72,10 @@ jobs:
           echo "languages_dark=$languages_dark" >> $GITHUB_OUTPUT
 
   publish-branch:
+    needs: [generate_stats, generate_languages]
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    needs: [generate_stats, generate_languages]
     steps: 
       - name: collect outputs
         - env: 
