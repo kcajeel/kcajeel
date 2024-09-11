@@ -1,0 +1,99 @@
+name: Preload profile stats
+
+on: 
+  schedule: 
+    - cron: "* */12 * * *"
+
+  workflow-dispatch: 
+
+  push: 
+    branches: 
+      - master
+
+jobs: 
+  generate_stats: 
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs: 
+      stats_light: ${{ steps.create_output.stats_light }}
+      stats_dark: ${{ steps.create_output.stats_dark }}
+    steps: 
+      - name: Fetch SVG's
+        env: 
+          stats_dark: https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true
+          stats_light: https://github-readme-stats-nine-bice-31.vercel.app/api?username=kcajeel&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_light&locale=en&hide_border=true
+        run: |
+          mkdir output
+          wget "$stats_dark" -O output/stats_dark.svg
+          wget "$stats_light" -O output/stats_light.svg
+      
+      - name: Check SVG Generation
+        run: |
+          ls output
+          test -f output/stats_dark.svg
+          test -f output/stats_light.svg
+
+      - name: Send SVG's to Output
+        id: create_output
+        run: |
+          stats_light=$(<cat output/stats_light.svg)
+          stats_dark=$(<cat output/stats_dark.svg)
+          echo "stats_light=$stats_light" >> $GITHUB_OUTPUT
+          echo "stats_dark=$stats_dark" >> $GITHUB_OUTPUT
+
+  generate_languages: 
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs: 
+      languages_light: ${{ steps.create_output.languages_light }}
+      languages_dark: ${{ steps.create_output.languages_dark }}
+    steps: 
+      - name: Fetch SVG's
+        env: 
+          languages_dark: https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true
+          languages_light: https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_light&hide_border=true
+        run: |
+          mkdir output
+          wget "$languages_dark" -O output/languages_dark.svg
+          wget "$languages_light" -O output/languages_light.svg
+      
+      - name: Check SVG Generation
+        run: |
+          ls output
+          test -f output/languages_dark.svg
+          test -f output/languages_light.svg
+
+      - name: Send SVG's to Output
+        id: create_output
+        run: |
+          languages_light=$(<cat output/languages_light.svg)
+          languages_dark=$(<cat output/languages_dark.svg)
+          echo "languages_light=$languages_light" >> $GITHUB_OUTPUT
+          echo "languages_dark=$languages_dark" >> $GITHUB_OUTPUT
+
+  publish-branch:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    needs: [generate_stats, generate_languages]
+    steps: 
+      - name: collect outputs
+        - env: 
+          stats_dark: ${{ needs.generate_stats.outputs.stats_dark }}
+          stats_light: ${{ needs.generate_stats.outputs.stats_light }}
+          languages_dark: ${{ needs.generate_languages.outputs.languages_dark }}
+          languages_light: ${{ needs.generate_languages.outputs.languages_light }}
+        run: |
+          mkdir output
+          echo "$STATS_DARK" > output/stats_dark.svg
+          echo "$STATS_LIGHT" > output/stats_light.svg
+          echo "$LANGUAGES_DARK" > output/languages_dark.svg
+          echo "$LANGUAGES_LIGHT" > output/languages_light.svg
+      
+      - name: push outputs to github
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with: 
+          target_branch: output
+          build_dir: output
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
