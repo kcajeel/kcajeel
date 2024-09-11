@@ -36,8 +36,8 @@ jobs:
       - name: Send SVG's to Output
         id: create_output
         run: |
-          stats_light=$(<output/stats_light.svg)
-          stats_dark=$(<output/stats_dark.svg)
+          stats_light=$(< output/stats_light.svg)
+          stats_dark=$(< output/stats_dark.svg)
           echo "stats_light=$stats_light" >> $GITHUB_OUTPUT
           echo "stats_dark=$stats_dark" >> $GITHUB_OUTPUT
 
@@ -66,8 +66,8 @@ jobs:
       - name: Send SVG's to Output
         id: create_output
         run: |
-          languages_light=$(<output/languages_light.svg)
-          languages_dark=$(<output/languages_dark.svg)
+          languages_light=$(< output/languages_light.svg)
+          languages_dark=$(< output/languages_dark.svg)
           echo "languages_light=$languages_light" >> $GITHUB_OUTPUT
           echo "languages_dark=$languages_dark" >> $GITHUB_OUTPUT
 
