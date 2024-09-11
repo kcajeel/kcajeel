@@ -45,9 +45,9 @@ jobs:
           languages_dark: https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true
           languages_light: https://github-readme-stats-nine-bice-31.vercel.app/api/top-langs?username=kcajeel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_light&hide_border=true
         run: |
-          mkdir output
-          wget "$languages_dark" -O output/languages_dark.svg
-          wget "$languages_light" -O output/languages_light.svg
+            mkdir output
+            wget "$languages_dark" -O output/languages_dark.svg
+            wget "$languages_light" -O output/languages_light.svg
       
       - name: Check SVG Generation
         run: |
@@ -58,11 +58,36 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-            name: languages
-            path: output
+          name: languages
+          path: output
+
+  generate_snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: generate snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            output/snake.svg?palette=github&color_snake=blue
+            output/snake-dark.svg?palette=github-dark&color_snake=blue
+            
+      - name: make sure the files were generated
+        run: |
+          ls dist
+          test -f dist/snake.svg
+          test -f dist/snake-dark.svg
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: snake
+          path: output
 
   publish-branch:
-    needs: [generate_stats, generate_languages]
+    needs: [generate_stats, generate_languages, generate_snake]
     permissions:
       contents: write
     runs-on: ubuntu-latest
