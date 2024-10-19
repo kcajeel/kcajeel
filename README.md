@@ -17,18 +17,8 @@
       <li>Rust is my favorite language to work with</li>
       <li>I use Gentoo BTW</li>
     </ul>
-    <div align="justify" >
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="../output/stats/stats_dark.svg" height="150" alt="stats graph">
-        <source media="(prefers-color-scheme: light)" srcset="../output/stats/stats_light" height="150" alt="stats graph">
-        <img alt="stats graph">
-      </picture>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="../output/languages/languages_dark.svg" height="150" alt="languages graph">
-        <source media="(prefers-color-scheme: light)" srcset="../output/languages/languages_light.svg" height="150" alt="languages graph">
-        <img alt="languages graph">
-      </picture>
-    </div>
+<!-- Deleted profile graphs because the github api wasn't working due to rate limiting. -->
+<!-- I'm out of town but I'll fix it when I get back. -->
     <h3 align="left">I don't have a project for every language I know:</h3>
     <div align="left" >
       <img src="https://skillicons.dev/icons?i=rust" height="30" alt="Rust"  />
