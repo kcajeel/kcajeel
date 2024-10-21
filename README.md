@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- I used https://profile-readme-generator.com to get the cool stats, language icons, and snake animation -->
+<!-- I used https://profile-readme-generator.com to find out about the stats, language icons, and snake animation -->
 <!-- I wrote the rest in html here -->
+<!-- My stats and snake .svg's are automatically updated every Sunday and pushed to the `output` branch via GH Actions -->
   <head>
     <meta charset="utf-8>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1 align="left">Hi 👋! My name is Jack and I like to make things.</h1>
+    <h1 align="left">Hi! I'm Jack, welcome to my GitHub. 👋</h1>
     <h2 align="left">About Me</h2>
     <ul>
       <li>I'm a senior at Embry-Ridle Aeronautical University majoring in Computer Science with a concentration in Cybersecurity Engineering</li>
