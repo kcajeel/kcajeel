@@ -66,18 +66,18 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: generate snake.svg
+      - name: Generate Snake SVG's
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            output/snake.svg?palette=github&color_snake=blue
+            output/snake-light.svg?palette=github&color_snake=blue
             output/snake-dark.svg?palette=github-dark&color_snake=blue
             
       - name: make sure the files were generated
         run: |
           ls output
-          test -f output/snake.svg
+          test -f output/snake-light.svg
           test -f output/snake-dark.svg
 
       - name: Upload Artifacts
