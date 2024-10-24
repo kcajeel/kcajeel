@@ -21,7 +21,7 @@
     <div align="justify" >
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="../output/stats/stats_dark.svg" height="150" alt="stats graph">
-        <source media="(prefers-color-scheme: light)" srcset="../output/stats/stats_light" height="150" alt="stats graph">
+        <source media="(prefers-color-scheme: light)" srcset="../output/stats/stats_light.svg" height="150" alt="stats graph">
         <img alt="stats graph">
       </picture>
       <picture>
