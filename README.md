@@ -4,8 +4,7 @@
 <!-- I wrote the rest in html here -->
 <!-- My stats and snake .svg's are automatically updated every Sunday and pushed to the `output` branch via GH Actions -->
   <head>
-    <meta charset="utf-8>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8">
   </head>
   <body>
     <h1 align="left">Hi! I'm Jack, welcome to my GitHub. 👋</h1>
