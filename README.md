@@ -32,33 +32,33 @@
     </div>
     <h3 align="left">I don't have a project for every language I know:</h3>
     <div align="left" >
-      <img src="https://skillicons.dev/icons?i=rust" height="30" alt="Rust"  />
+      <img src="../output/icons/rust_icon.svg" height="30" alt="Rust"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="Java"  />
+      <img src="../output/icons/java_icon.svg" height="30" alt="Java"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="C"  />
+      <img src="../output/icons/c_icon.svg" height="30" alt="C"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="C++"  />
+      <img src="../output/icons/cpp_icon.svg" height="30" alt="C++"  />
       <img width="12" />
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=bash" height="30" alt="BASh"/>
-        <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="BASh" />
+        <source media="(prefers-color-scheme: dark)" srcset="../output/icons/bash_icon_dark.svg" height="30" alt="BASh"/>
+        <source media="(prefers-color-scheme: light)" srcset="../output/icons/bash_icon_light.svg" height="30" alt="BASh" />
         <img alt="BASh" >
       </picture>
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" height="30" alt="Dart"  />
+      <img src="../output/icons/dart_icon.svg" height="30" alt="Dart"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="30" alt="Flutter"  />
+      <img src="../output/icons/flutter_icon.svg" height="30" alt="Flutter"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="HTML"  />
+      <img src="../output/icons/html5_icon.svg" height="30" alt="HTML"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="CSS"  />
+      <img src="../output/icons/css3_icon.svg" height="30" alt="CSS"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="JavaScript"  />
+      <img src="../output/icons/js_icon.svg" height="30" alt="JavaScript"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="TypeScript"  />
+      <img src="../output/icons/ts_icon.svg" height="30" alt="TypeScript"  />
       <img width="12" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="Python"  />
+      <img src="../output/icons/python_icon.svg" height="30" alt="Python"  />
     </div>
     <h3 align="left">You can also find me on <a href=https://linkedin.com/in/john-jack-lee>LinkedIn</a></h3>
     </html>
