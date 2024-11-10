@@ -31,33 +31,31 @@
     </div>
     <h3 align="left">I don't have a project for every language I know:</h3>
     <div align="left" >
-      <img src="../output/icons/rust_icon.svg" height="30" alt="Rust"  />
+      <img src="icons/rust_icon.svg" height="30" alt="Rust"  />
       <img width="12" />
-      <img src="../output/icons/java_icon.svg" height="30" alt="Java"  />
+      <img src="icons/java_icon.svg" height="30" alt="Java"  />
       <img width="12" />
-      <img src="../output/icons/c_icon.svg" height="30" alt="C"  />
+      <img src="icons/c_icon.svg" height="30" alt="C"  />
       <img width="12" />
-      <img src="../output/icons/cpp_icon.svg" height="30" alt="C++"  />
+      <img src="icons/cpp_icon.svg" height="30" alt="C++"  />
+      <img width="12" />
+      <img src="icons/python_icon.svg" height="30" alt="Python"  />
       <img width="12" />
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="../output/icons/bash_icon_dark.svg" height="30" alt="BASh"/>
-        <source media="(prefers-color-scheme: light)" srcset="../output/icons/bash_icon_light.svg" height="30" alt="BASh" />
+        <source media="(prefers-color-scheme: dark)" srcset="icons/bash_icon_dark.svg" height="30" alt="BASh"/>
+        <source media="(prefers-color-scheme: light)" srcset="icons/bash_icon_light.svg" height="30" alt="BASh" />
         <img alt="BASh" >
       </picture>
       <img width="12" />
-      <img src="../output/icons/dart_icon.svg" height="30" alt="Dart"  />
+      <img src="icons/dart_icon.svg" height="30" alt="Dart"  />
       <img width="12" />
-      <img src="../output/icons/flutter_icon.svg" height="30" alt="Flutter"  />
+      <img src="icons/html5_icon.svg" height="30" alt="HTML"  />
       <img width="12" />
-      <img src="../output/icons/html5_icon.svg" height="30" alt="HTML"  />
+      <img src="icons/css3_icon.svg" height="30" alt="CSS"  />
       <img width="12" />
-      <img src="../output/icons/css3_icon.svg" height="30" alt="CSS"  />
+      <img src="icons/js_icon.svg" height="30" alt="JavaScript"  />
       <img width="12" />
-      <img src="../output/icons/js_icon.svg" height="30" alt="JavaScript"  />
-      <img width="12" />
-      <img src="../output/icons/ts_icon.svg" height="30" alt="TypeScript"  />
-      <img width="12" />
-      <img src="../output/icons/python_icon.svg" height="30" alt="Python"  />
+      <img src="icons/ts_icon.svg" height="30" alt="TypeScript"  />
     </div>
     <h3 align="left">You can also find me on <a href=https://linkedin.com/in/john-jack-lee>LinkedIn</a></h3>
     </html>
