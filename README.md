@@ -31,31 +31,53 @@
     </div>
     <h3 align="left">I don't have a project for every language I know:</h3>
     <div align="left" >
-      <img src="icons/rust_icon.svg" height="30" alt="Rust"  />
+      <a href="https://www.rust-lang.org/">
+        <img src="icons/rust_icon.svg" height="30" alt="Rust"  />
+      </a>
       <img width="12" />
-      <img src="icons/java_icon.svg" height="30" alt="Java"  />
+      <a href="https://www.oracle.com/java/">
+        <img src="icons/java_icon.svg" height="30" alt="Java"  />
+      </a>
       <img width="12" />
-      <img src="icons/c_icon.svg" height="30" alt="C"  />
+      <a href="https://www.open-std.org/jtc1/sc22/wg14/">
+        <img src="icons/c_icon.svg" height="30" alt="C"  />
+      </a>
       <img width="12" />
-      <img src="icons/cpp_icon.svg" height="30" alt="C++"  />
+      <a href="https://isocpp.org/">
+        <img src="icons/cpp_icon.svg" height="30" alt="C++"  />
+      </a>
       <img width="12" />
-      <img src="icons/python_icon.svg" height="30" alt="Python"  />
+      <a href="https://www.python.org/">
+        <img src="icons/python_icon.svg" height="30" alt="Python"  />
+      </a>
       <img width="12" />
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="icons/bash_icon_dark.svg" height="30" alt="BASh"/>
-        <source media="(prefers-color-scheme: light)" srcset="icons/bash_icon_light.svg" height="30" alt="BASh" />
-        <img alt="BASh" >
-      </picture>
+      <a href="https://www.gnu.org/software/bash/">
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="icons/bash_icon_dark.svg" height="30" alt="BASh"/>
+            <source media="(prefers-color-scheme: light)" srcset="icons/bash_icon_light.svg" height="30" alt="BASh" />
+            <img alt="BASh" >
+        </picture>
+      </a>
       <img width="12" />
-      <img src="icons/dart_icon.svg" height="30" alt="Dart"  />
+      <a href="https://dart.dev/">
+        <img src="icons/dart_icon.svg" height="30" alt="Dart"  />
+      </a>
       <img width="12" />
-      <img src="icons/html5_icon.svg" height="30" alt="HTML"  />
+      <a href="https://html.spec.whatwg.org/">
+        <img src="icons/html5_icon.svg" height="30" alt="HTML"  />
+      </a>
       <img width="12" />
-      <img src="icons/css3_icon.svg" height="30" alt="CSS"  />
+      <a href="https://www.w3.org/TR/CSS/#css">
+        <img src="icons/css3_icon.svg" height="30" alt="CSS"  />
+      </a>
       <img width="12" />
-      <img src="icons/js_icon.svg" height="30" alt="JavaScript"  />
+      <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/">
+        <img src="icons/js_icon.svg" height="30" alt="JavaScript"  />
+      </a>
       <img width="12" />
-      <img src="icons/ts_icon.svg" height="30" alt="TypeScript"  />
+      <a href="https://www.typescriptlang.org/">
+        <img src="icons/ts_icon.svg" height="30" alt="TypeScript"  />
+      </a>
     </div>
     <h3 align="left">You can also find me on <a href=https://linkedin.com/in/john-jack-lee>LinkedIn</a></h3>
     </html>
