@@ -31,11 +31,11 @@
     </div>
     <h3 align="left">I don't have a project for every language I know:</h3>
     <div align="left" >
-      <a href="https://www.rust-lang.org/">
+      <a href="https://doc.rust-lang.org/stable/book/title-page.html">
         <img src="icons/rust_icon.svg" height="30" alt="Rust"  />
       </a>
       <img width="12" />
-      <a href="https://www.oracle.com/java/">
+      <a href="https://docs.oracle.com/javase/8/docs/api/overview-summary.html">
         <img src="icons/java_icon.svg" height="30" alt="Java"  />
       </a>
       <img width="12" />
@@ -43,15 +43,15 @@
         <img src="icons/c_icon.svg" height="30" alt="C"  />
       </a>
       <img width="12" />
-      <a href="https://isocpp.org/">
+      <a href="https://en.cppreference.com/">
         <img src="icons/cpp_icon.svg" height="30" alt="C++"  />
       </a>
       <img width="12" />
-      <a href="https://www.python.org/">
+      <a href="https://docs.python.org/3/">
         <img src="icons/python_icon.svg" height="30" alt="Python"  />
       </a>
       <img width="12" />
-      <a href="https://www.gnu.org/software/bash/">
+      <a href="https://www.gnu.org/software/bash/manual/bash.html">
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="icons/bash_icon_dark.svg" height="30" alt="BASh"/>
             <source media="(prefers-color-scheme: light)" srcset="icons/bash_icon_light.svg" height="30" alt="BASh" />
@@ -59,7 +59,7 @@
         </picture>
       </a>
       <img width="12" />
-      <a href="https://dart.dev/">
+      <a href="https://dart.dev/docs">
         <img src="icons/dart_icon.svg" height="30" alt="Dart"  />
       </a>
       <img width="12" />
