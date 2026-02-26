@@ -10,11 +10,11 @@
     <h1 align="left">Hi! I'm Jack, welcome to my GitHub. 👋</h1>
     <h2 align="left">About Me</h2>
     <ul>
-      <li>I'm a senior at Embry-Riddle Aeronautical University majoring in Computer Science with a concentration in Cybersecurity Engineering</li>
-      <li>Interested in cybersecurity, cryptography, software development, Linux/FOSS stuff, and learning</li>
+      <li>I'm a Software Engineer in the aerospace industry working on flight simulation trainers</li>
+      <li>Interested in cybersecurity, cryptography, Linux/FOSS stuff, and learning new skills</li>
       <li>None of my code is written by AI</li>
       <li>I enjoy working in teams using a design-first approach with TDD</li>
-      <li>Rust is my favorite language to work with</li>
+      <li>Rust is my favorite language to work with, and I work with C++ professionally</li>
       <li>I use Gentoo BTW</li>
     </ul>
     <div align="justify" >
